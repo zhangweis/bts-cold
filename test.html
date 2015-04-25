@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <script>
+        module = {};
+    </script>
+        <script src='bitcoinjs.min.js'></script>
+<script src='bs58.js'></script>
+    </head>
+    <body>
+    <script>
+        var key1 = Bitcoin.ECKey.fromWIF('5K8uREihCf6kaB7gimmNLqkzVaCwYcnNUJR6nw9jtX8aw9B2H9e');
+        key1.pub.compressed = true;
+        var publicKey = key1.pub.toBuffer();
+        var hash = Bitcoin.crypto.ripemd160(publicKey).slice(0, 4);
+
+        var result = publicKey.toString('hex')+hash.toString('hex');
+        var address = bs58.encode(publicKey.constructor(result,'hex'));
+        console.log(address)
+        document.write(address)
+    </script>
+    </body>
+</html>

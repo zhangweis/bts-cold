@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src='bundle.js'></script>
+        <script src='vue.js'></script>
+    </head>
+    <body>
+        <form id='form'>
+            From: <input v-model="builder.from" size="100"/> 
+            <br/>
+            To: <input v-model="builder.to" size="100"/>
+            <br/>
+            <input v-model="builder.amount" size="10" number=""/>
+            <select v-model="builder.assetId" number="">
+              <option value='0'>BTS</option>
+              <option value='22'>USD</option>
+            </select>
+        
+            <br/>
+            <a v-on="click: createTrxFrom">Create Trx.</a>
+            <br/>
+            <textarea cols="100" rows="5" v-model="builder.trx.json"></textarea>
+            <textarea cols="100" rows="3" v-model="builder.trx.hex"></textarea>
+            <br/>
+            Signature:
+            <br/>
+            <textarea cols="100" rows="3" v-model="builder.signature"></textarea>
+            <br/>
+            <a v-on="click: signTrx">Signed Trx.</a>
+            <br/>
+            <textarea cols="100" rows="10" v-model="builder.signedTrx.json"></textarea>
+        </form>
+        
+        <script src='createTrx.js'></script>
+    </body>
+</html>

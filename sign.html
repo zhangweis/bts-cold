@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src='bundle.js'></script>
+        <script src='vue.js'></script>
+    </head>
+    <body>
+        <form id='form'>
+            Tx Hex:
+            <br/>
+            <textarea cols="100" rows="5" v-model="signer.txHex"></textarea>
+            <br/>
+            Private Key:
+            <br/>
+            <textarea cols="100" rows="3" v-model="signer.privateKey"></textarea>
+            <br/>
+            <a v-on="click: signTrx">Sign</a>
+            <br/>
+            <textarea cols="100" rows="10" v-model="signer.signature"></textarea>
+        </form>
+        
+        <script src='signTrx.js'></script>
+    </body>
+</html>
