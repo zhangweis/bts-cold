@@ -1,0 +1,27 @@
+{
+  "name": "bts-cold",
+  "version": "1.0.0",
+  "description": "bts cold staorge",
+  "main": "index.js",
+  "dependencies": {
+//	"bs58":"2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangweis/bts-cold.git"
+  },
+  "keywords": [
+    "bts",
+    "cold"
+  ],
+  "author": "john",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangweis/bts-cold/issues"
+  },
+  "homepage": "https://github.com/zhangweis/bts-cold"
+}
