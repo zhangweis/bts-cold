@@ -3215,6 +3215,7 @@ function getName(fn) {
     hash: require('./ecc/hash'),
     bs58: require('bs58'),
     ByteBuffer: ByteBuffer,
+    Buffer: require('buffer'),
     common: {
       fp: require('./common/fast_parser')
     }
