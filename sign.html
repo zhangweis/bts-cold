@@ -13,7 +13,7 @@
             <br/>
             <textarea cols="100" rows="3" v-model="signer.privateKey"></textarea>
             <br/>
-            <a v-on="click: signTrx">Sign</a>
+            <button v-on="click: signTrx" onclick='return false'>Sign</button>
             <br/>
             <textarea cols="100" rows="10" v-model="signer.signature"></textarea>
         </form>
