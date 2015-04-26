@@ -2,7 +2,7 @@
     var createTrx = new Vue({
         el: '#form',
         data: {
-            builder: new TransactionBuilder('BTS32NggKwekh6pnTU2gU3ZVMnSc2bZrjZxb', '1ECWivMucRHnFuRzSsSDWUWwnUQvxX9t2T'),
+            builder: new TransactionBuilder('1ECWivMucRHnFuRzSsSDWUWwnUQvxX9t2T','1ANGELwQwWxMmbdaSWhWLqBEtPTkWb8uDc'),
             trx: ''
         },
         methods: {
