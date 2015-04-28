@@ -43,11 +43,13 @@ tx.operations.forEach(function(op){
         } catch(e) {
             addr = bts.ecc.Address.fromString(self.depositAddr);
         }
-	var addr1 = new bts.ecc.Address(op.withdraw_condition.condition.owner);
+	var addr1 = new bts.ecc.Address(op.operation.withdraw_condition.condition.owner);
 	console.log(addr.toString());
 	console.log(addr1.toString());
 	if (addr.toString()!=addr1.toString()) {
 		console.error('addr not matched');
+		self.signature = "<addr not matched>";
+		return;
 	}
 	}
 });
