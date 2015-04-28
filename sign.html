@@ -13,6 +13,8 @@
             <br/>
             <textarea cols="100" rows="3" v-model="signer.privateKey"></textarea>
             <br/>
+            DepositAddrToVerify(optional):<input size='70' v-model="signer.depositAddr"></textarea>
+            <br/>
             <button v-on="click: signTrx" onclick='return false'>Sign</button>
             <br/>
             <textarea cols="100" rows="10" v-model="signer.signature"></textarea>
